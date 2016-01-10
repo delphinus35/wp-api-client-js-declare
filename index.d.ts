@@ -164,5 +164,7 @@ declare interface Date {
     toISOString(): string;
 }
 
-declare var wp: WP_API.WP;
-
+declare module "wp-api" {
+    var wp: WP_API.WP;
+    export = wp;
+}
